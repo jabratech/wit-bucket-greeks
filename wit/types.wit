@@ -1,9 +1,9 @@
 interface types {
     
-    use jabratech:black-schole-greeks/types.{request as greeks-request};
+    use jabratech:black-scholes/types.{calculate-greeks-request};
 
     record request{
-        options: list<greeks-request>,
+        options: list<calculate-greeks-request>,
         currency: string,
     }
 
