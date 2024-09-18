@@ -1,4 +1,4 @@
-interface greeks-workflow-handler {
+interface handler {
     use jabratech:common/types.{response};
     use types.{snapshot-response, bucket-response, request};
   
