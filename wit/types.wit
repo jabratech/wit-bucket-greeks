@@ -1,0 +1,37 @@
+interface types {
+    
+    use jabratech:black-schole-greeks/types.{request as greeks-request};
+
+    record request{
+        options: list<greeks-request>,
+        currency: string,
+    }
+
+    record snapshot{
+        greek: string,
+        bs: f64, 
+        smile: f64,
+    }
+
+    record snapshot-response{
+        code: s16,
+        message: string,
+        data: list<snapshot>,
+    }
+
+    record bucket{
+        period: string,
+        smile-delta: f64, 
+        smile-gamma: f64,
+        smile-vega: f64,
+        smile-w-vega: f64,
+        rr: f64,
+        bf: f64,
+    }
+
+    record bucket-response{
+        code: s16,
+        message: string,
+        data: list<bucket>,
+    }
+}

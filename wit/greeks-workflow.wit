@@ -1,0 +1,8 @@
+interface greeks-workflow-handler {
+  use jabratech:common/types.{response};
+    use types.{snapshot-response, bucket-response, request};
+  
+    aggregate-snapshot-greeks:  func(request: request) -> result<snapshot-response, response>;
+    aggregate-bucket-greeks:  func(request: request) -> result<bucket-response, response>;
+
+  }
