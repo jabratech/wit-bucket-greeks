@@ -21,12 +21,10 @@ interface types {
 
     record bucket{
         period: string,
-        smile-delta: f64, 
-        smile-gamma: f64,
-        smile-vega: f64,
-        smile-w-vega: f64,
-        rr: f64,
-        bf: f64,
+        delta: f64, 
+        gamma: f64,
+        vega: f64,
+        rho: f64
     }
 
     record bucket-response{
