@@ -23,6 +23,7 @@ interface types {
         period: string,
         delta: f64, 
         gamma: f64,
+        theta: f64,
         vega: f64,
         rho: f64
     }
